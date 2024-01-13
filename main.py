@@ -146,7 +146,7 @@ class MyApp:
     def connect_to_database(self):
         try:
             self.db = mysql.connector.connect(
-                host="localhost", user="root", password="thisismypass@", database="projet_TP5"
+                host="localhost", user="root", password="    ", database="projet_TP5"
             )
             self.cursor = self.db.cursor(buffered=True)
         except mysql.connector.Error as err:
