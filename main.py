@@ -159,22 +159,12 @@ class MyApp:
      treeview.update()
     
     def update_values(self):
-        
-        
-        sigmaPieceBonneP1 = None
-        sigmaPieceBonneP2 = None
-        sigmaPieceBonneP3= None
-        consumptionMaterialP1= None
-        consumptionMaterialP2 = None
-        cumulArretP1= None
-        cumulArretP2 = None
         periode_debut = self.entry_debut.get_date()
         periode_fin = self.entry_fin.get_date()
         self.clear_treeview(self.treeview_presse)
         self.clear_treeview(self.treeview_ligne)
         self.clear_treeview(self.treeview_table3) 
         self.clear_treeview(self.treeview_table4) 
-
         
         try:
            if not self.db.is_connected():
